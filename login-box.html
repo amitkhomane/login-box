@@ -81,7 +81,7 @@ and password).
       validate: function() {
         this.$.identifierInput.invalid = !!!this.identifier;
         this.$.passwordInput.invalid = !!!this.password;
-        if (!this.password || !this.password) return this.shake();
+        if (!this.password || !this.identifier) return this.shake();
         this.fireLoginTry();
       },
 
